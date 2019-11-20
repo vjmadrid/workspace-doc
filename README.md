@@ -4,6 +4,7 @@ This workspace is a repository that serves to **document** some elements of elem
 
 ## Technological Stack
 
+* [Workstation](https://github.com/vjmadrid/workspace-doc/blob/master/doc/workstation/README-Configuration-Workstation-Apps.md) - Local Developement Environment
 * [Maven 3](https://maven.apache.org/) - Dependency Management
   * [Build Plugins](https://github.com/vjmadrid/workspace-doc/blob/master/doc/maven/README-Configuration-Maven-Build-Plugins.md)
   * [Test Plugins](https://github.com/vjmadrid/workspace-doc/blob/master/doc/maven/README-Configuration-Maven-Test-Plugins.md)

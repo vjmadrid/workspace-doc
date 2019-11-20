@@ -47,7 +47,6 @@ https://docs.spring.io/spring-boot/docs/current/maven-plugin/usage.html
 
 Use Spring Boot Version
 
-
 List of Goals
 * Goal "run" : Execute Spring Boot application
 * Goal "repackage" : Create Jar / War auto-executable
@@ -92,11 +91,20 @@ https://maven.apache.org/plugins/maven-clean-plugin/
 Use Spring Boot Version or Normal Version
 
 Note : Core Plugins
-
 * Configure resource Encoding : UTF-8
 * Copy files from a input resource directory to a output directory
-	* Goal "clean" : cleans the build
-	* Goal "help" : help information
+* ...
+	
+List of Goals	
+* Goal "clean" : cleans the build
+* Goal "help" : help information
+
+
+```bash
+mvn clean:clean
+or
+mvn clean
+```
 
 
 Running during a build
@@ -120,12 +128,6 @@ Running during a build
 	</plugin>
 	...
 </plugins>
-```
-
-```bash
-mvn clean:clean
-or
-mvn clean
 ```
 
 
@@ -165,11 +167,17 @@ Note : Core Plugins
 
 * Configure resource Encoding : UTF-8
 * Copy files from a input resource directory to a output directory
-	* Goal "resources" : copy resources for main source code
-	* Goal "testResources" : copy resources for test source code
-	* Goal "copy-resources" : copy resources for arbitrary source code
 * Replace placeholder variables in the resource file
 * ...
+
+List of Goals	
+* Goal "resources" : copy resources for main source code
+* Goal "testResources" : copy resources for test source code
+* Goal "copy-resources" : copy resources for arbitrary source code
+
+```bash
+mvn resources:resources
+```
 
 
 
@@ -212,15 +220,21 @@ Note : Core Plugins
 
 * Configure compilation version : source and target
 * Configure encoding
-	* Goal "compile" : Compile main source files
-	* Goal "testCompile" : Compile test source files
 * ...
 
+List of Goals
+* Goal "compile" : Compile main source files
+* Goal "testCompile" : Compile test source files
+
+```bash
+mvn compiler:compile
+```
 
 
 
 
-### <a name="maven-verifier-plugin">maven-verifier-plugin</a>m
+
+### <a name="maven-verifier-plugin">maven-verifier-plugin</a>
 
 Plugin used to verify the existence of files and directories
 
@@ -262,7 +276,6 @@ Configuration with a verification File
 
 List of Goals
 * Goal "verify" : Verify the existence od files and directories
-
 
 ```bash
 mvn verifier:verify
@@ -352,11 +365,6 @@ List of Goals
 * Goal "uptodate-property" : Sets a property according to whether a file set's outputs are up to date with respect to its inputs
 * Goal "uptodate-properties" : Sets multiple properties according to whether multiple file sets' outputs are up to date with respect to their inputs
 * Goal "rootlocation" : Sets a property which defines the root folder of a multi module build
-
-
-List of Goals
-* Goal "enforce" : Execute rules
-* Goal "display-info" : Display info detected
 
 ```bash
 mvn build-helper:add-source
