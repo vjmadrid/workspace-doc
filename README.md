@@ -6,10 +6,11 @@ This workspace is a repository that serves to **document** some elements of elem
 
 * [Workstation](https://github.com/vjmadrid/workspace-doc/blob/master/doc/workstation/README-Configuration-Workstation-Apps.md) - Local Developement Environment
 * [Maven 3](https://maven.apache.org/) - Dependency Management
-  * [Build Plugins](https://github.com/vjmadrid/workspace-doc/blob/master/doc/maven/README-Configuration-Maven-Build-Plugins.md)
-  * [Test Plugins](https://github.com/vjmadrid/workspace-doc/blob/master/doc/maven/README-Configuration-Maven-Test-Plugins.md)
-  * [Test QA](https://github.com/vjmadrid/workspace-doc/blob/master/doc/maven/README-Configuration-Maven-QA-Plugins.md)
-  * [Test Deploy](https://github.com/vjmadrid/workspace-doc/blob/master/doc/maven/README-Configuration-Maven-Deploy-Plugins.md)
+    * [Build Plugins](https://github.com/vjmadrid/workspace-doc/blob/master/doc/maven/README-Configuration-Maven-Build-Plugins.md)
+    * [Test Plugins](https://github.com/vjmadrid/workspace-doc/blob/master/doc/maven/README-Configuration-Maven-Test-Plugins.md)
+    * [QA Plugins](https://github.com/vjmadrid/workspace-doc/blob/master/doc/maven/README-Configuration-Maven-QA-Plugins.md)
+    * [Deploy Plugins](https://github.com/vjmadrid/workspace-doc/blob/master/doc/maven/README-Configuration-Maven-Deploy-Plugins.md)
+    * [Database Plugins](https://github.com/vjmadrid/workspace-doc/blob/master/doc/maven/README-Configuration-Maven-DB-Plugins.md)
 * ...
 
 

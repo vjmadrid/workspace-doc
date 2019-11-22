@@ -27,6 +27,19 @@ Step to follow:
 - [Virtual Box](https://www.virtualbox.org/) - Virtual Machine
 - [DBeaver](https://dbeaver.io/) - Database Tool
 - [Postman](https://www.getpostman.com/) - API Development Tool
+- [minikube](https://github.com/kubernetes/minikube) - Implments Local Kubernetes cluster
+- [vagrant](https://www.vagrantup.com/) - Development Environment Tool
+- [Wine](https://www.winehq.org/) - Run Windows Application
+
+- [Visual Studio Code](https://code.visualstudio.com) - IDE
+    * [GitLenss - Git Supercharger]() - Git into VSC
+    * [Noctis]() - Ligth & Dark Themes
+    * [ident-rainbow]() - Maked identation
+    * [XML Tools]() - XML Formatting, XQuery and XPath Query Tool
+    * [YAML]() - YAML Support
+    
+
+
 
 ## Authors
 

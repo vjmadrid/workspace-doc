@@ -23,7 +23,7 @@ Note : Add to the plugins area <plugins> or in a specific way to the established
 https://revapi.org/modules/revapi-maven-plugin/#specifying_versions_to_check
 
 
-### <a name="semver-maven-plugin">ssemver-maven-plugin</a>
+### <a name="semver-maven-plugin">semver-maven-plugin</a>
 
 Plugin used to work with Spring Boot application
 

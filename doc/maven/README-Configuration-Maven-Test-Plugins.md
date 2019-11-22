@@ -7,10 +7,17 @@ Step to follow:
 * Check Prerequisites
 * List of Plugins
 
+
+
+
+
 ## Check Prerequisites
 
 * Verify that the Maven is installed
 * Verify that your project have integration with Maven
+
+
+
 
 
 ## List of Plugins
@@ -73,17 +80,87 @@ Your properties can be configured
 
 A good approach can be to configure it by environment
 
-Use Spring Boot Version
+Use Spring Boot Version or Normal Version
 
 Note : Core Plugins
 
 * Execute test
 * Generate report/surefire-reports
 * Integration with normal test executions
+* ...
 
 List of Goals
-* Goal "surefire:help" : Display help information
-* Goal "surefire:test" : Run tests using Surefire
+* Goal "help" : Display help information
+* Goal "test" : Run tests using Surefire
+
+```bash
+mvn surefire:test
+```
+
+Running integration test
+
+```bash
+<properties>
+	...
+	<skip.all.tests>false</skip.all.tests>
+	<skip.unit.tests>false</skip.unit.tests>
+	<skip.integration.tests>false</skip.integration.tests>
+    ...
+</properties>
+
+<profiles>
+	...
+	<profile>
+		<id>dev</id>
+		<properties>
+			...
+			<skip.unit.tests>false</skip.unit.tests>
+			..
+		</properties>
+	</profile>
+	...
+</profiles>
+
+<plugins>
+	...
+	<plugin>
+		<groupId>org.apache.maven.plugins</groupId>
+		<artifactId>maven-surefire-plugin</artifactId> <!-- surefire plugin version managed by Spring Boot -->
+		<configuration>
+			<skipTests>${skip.unit.tests}</skipTests>
+		</configuration>
+		<executions>
+			<execution>
+				<id>unit-tests</id>
+				<phase>test</phase>
+				<goals>
+					<goal>test</goal>
+				</goals>
+				<configuration>
+					<skipTests>${skip.unit.tests}</skipTests>
+					<includes>
+						<include>**/*Test.java</include>
+					</includes>
+				</configuration>
+			</execution>
+			<execution>
+				<id>integration-tests</id>
+				<phase>integration-test</phase>
+				<goals>
+					<goal>test</goal>
+				</goals>
+				<configuration>
+					<skipTests>${skip.integration.tests}</skipTests>
+					<includes>
+						<include>**/*IT.*</include>
+					</includes>
+				</configuration>
+			</execution>
+		</executions>
+	</plugin>
+	...
+</plugins>
+```
 
 
 
@@ -159,30 +236,95 @@ mvn failsafe:verify
 
 
 
+
 ### <a name="jacoco-maven-plugin">jacoco-maven-plugin</a>
 
-Plugin used to work with Spring Boot application
+Plugin used to generate code coverage
 
-https://github.com/sidohaakma/semver-maven-plugin
+https://www.eclemma.org/jacoco/trunk/doc/maven.html
 
 ```bash
+<properties>
+	...
+	<start-class>com.acme.xxx.yyy.zzzl.Application</start-class>
+    ...
+</properties>
+
 <plugins>
 	...
 	<plugin>
+				<groupId>org.jacoco</groupId>
+				<artifactId>jacoco-maven-plugin</artifactId>
+				<version>X.Y.Z</version>
+				<executions>
 
-	</plugin>
+					<execution>
+						<id>coverage-initialize</id>
+						<goals>
+							<goal>prepare-agent</goal>
+						</goals>
+					</execution>
+					<execution>
+						<id>coverage-report</id>
+						<phase>test</phase>
+						<goals>
+							<goal>report</goal>
+						</goals>
+						<configuration>
+							<outputDirectory>target/jacoco-report</outputDirectory>
+						</configuration>
+					</execution>
+					
+					<execution>
+						<id>coverage-check</id>
+						<goals>
+							<goal>check</goal>
+						</goals>
+						<configuration>
+							<rules>
+								<rule>
+									<element>CLASS</element>
+									<excludes>
+										<exclude>${start-class}</exclude>
+									</excludes>
+									<limits>
+										<limit>
+											<counter>LINE</counter>
+											<value>COVEREDRATIO</value>
+											<minimum>80%</minimum>
+										</limit>
+									</limits>
+								</rule>
+							</rules>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
 	...
 </plugins>
 ```
 
 Use Spring Boot Version
 
-List of Goals
-* XXX
+* Create report : target/site/jacoco/index.html
+* Create Check with diferent configuration
 * ...
 
+List of Goals
+* Goal "help" 
+* Goal "prepare-agent"
+* Goal "prepare-agent-integration"
+* Goal "merge"
+* Goal "report"
+* Goal "report-integration"
+* Goal "report-aggregate"
+* Goal "check"
+* Goal "dump"
+* Goal "instrument"
+* Goal "restore-instrumented-classes"
+
 ```bash
-mvn spring-boot:run
+mvn test
 ```
 
 

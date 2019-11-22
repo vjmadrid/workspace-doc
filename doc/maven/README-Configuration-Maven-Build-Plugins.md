@@ -7,10 +7,17 @@ Step to follow:
 * Check Prerequisites
 * List of Plugins
 
+
+
+
+
 ## Check Prerequisites
 
 * Verify that the Maven is installed
 * Verify that your project have integration with Maven
+
+
+
 
 
 ## List of Plugins
@@ -24,6 +31,7 @@ Note : Add to the plugins area <plugins> or in a specific way to the established
 - [maven-verifier-plugin](#maven-verifier-plugin)
 - [build-helper-maven-plugin](#build-helper-maven-plugin)
 - [build-helper-maven-plugin](#build-helper-maven-plugin)
+
 
 
 
