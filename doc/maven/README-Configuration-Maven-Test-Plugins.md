@@ -27,6 +27,7 @@ Note : Add to the plugins area <plugins> or in a specific way to the established
 - [maven-surefire-plugin](#maven-surefire-plugin)
 - [maven-failsafe-plugin](#maven-failsafe-plugin)
 - [jacoco-maven-plugin](#jacoco-maven-plugin)
+- [spring-cloud-contract-maven-plugin](#spring-cloud-contract-maven-plugin)
 
 
 
@@ -322,6 +323,71 @@ List of Goals
 * Goal "dump"
 * Goal "instrument"
 * Goal "restore-instrumented-classes"
+
+```bash
+mvn test
+```
+
+
+
+
+
+### <a name="spring-cloud-contract-maven-plugin">spring-cloud-contract-maven-plugin</a>
+
+Plugin used to test CDC (Consumer Driven Contract)
+
+https://cloud.spring.io/spring-cloud-contract/spring-cloud-contract-maven-plugin/
+
+For JUnit require 
+
+1. Add Test Dependency
+
+```bash
+<properties>
+	...
+	<cdc.spring.cloud.contract.maven.plugin>2.1.1.RELEASE</cdc.spring.cloud.contract.maven.plugin>
+    ...
+</properties>
+
+<dependency>
+	<groupId>org.springframework.cloud</groupId>
+	<artifactId>spring-cloud-starter-contract-verifier</artifactId>
+	<version>${cdc.spring.cloud.contract.maven.plugin}</version>
+	<scope>test</scope>
+</dependency>
+```
+
+2. Add Maven Plugin
+
+```bash
+<properties>
+	...
+	<cdc.spring.cloud.contract.maven.plugin>2.1.1.RELEASE</cdc.spring.cloud.contract.maven.plugin>
+    ...
+</properties>
+
+<plugin>
+	<groupId>org.springframework.cloud</groupId>
+	<artifactId>spring-cloud-contract-maven-plugin</artifactId>
+	<version>${cdc.spring.cloud.contract.maven.plugin}</version>
+	<extensions>true</extensions>
+	<configuration>
+		<baseClassForTests>
+			com.baeldung.spring.cloud.springcloudcontractproducer.BaseTestClass
+		</baseClassForTests>
+	</configuration>
+</plugin>
+
+```
+
+Use Spring Boot Version
+
+* Create report : xxx
+* ...
+
+List of Goals
+* Goal "help" 
+* Goal ...
 
 ```bash
 mvn test
