@@ -22,6 +22,8 @@
 .classpath
 .loadpath
 .recommenders
+.sts4-cache/
+.factorypath
 
 target/
 bin/
