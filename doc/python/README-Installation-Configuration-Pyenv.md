@@ -25,6 +25,13 @@ It is advisable not to use the System version of Python
 > * It is usually located in /usr/bin/python by default unless you are using a framework manager
 
 
+Python Version Priority
+
+1. pyenv shell -> $PYENV_VERSION
+2. pyenv local -> .python-version file
+3. pyenv global -> ~/.pyenv/version
+4. system python
+
 
 Documentación
 
