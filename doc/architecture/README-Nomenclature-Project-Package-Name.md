@@ -2,6 +2,10 @@
 
 The identifier used to name the project package
 
+
+
+
+
 Step to follow:
 
 - [Check Prerequisites](#check-prerequisites)
@@ -12,30 +16,30 @@ Step to follow:
 
 
 
-## <a name="check-prerequisites">Check Prerequisites</a>
+## Check Prerequisites
 
  * The use of CamelCase nomenclature WITHOUT separator is recommended
  * It is recommended not to use compositions → Each word is a package
- * It is recommended to be unique
- *It is recommended to be in English
+ * It is recommended that this be unique
+ * English is recommended
 
 
 
 
 
-## <a name="format">Format</a>
+## Format
 
-<TYPE> . <COMPANY> . <CONTEXT / APP> . <MODULE>+? . <FEATURES>? . <FUNCTIONALITY>? . (<SUB FUNCTIONALITY>)?+
+<_TYPE_> . <_COMPANY_> . <_CONTEXT / APP_> . <_MODULE_>+? . <_FEATURES_>? . <_FUNCTIONALITY_>? . (<_SUB FUNCTIONALITY_>)?+
 
 Details
 
- * <TYPE> : fixed prefix (default com) -> can be either a country or an organization
- * <COMPANY> : name of the owner of the product (by default cistec)
- * <CONTEXT / APP> : name of the field or asset of the project
- * <MODULE> (optional) : Name of a module (*1)
- * <FEATURES> (optional development) : Name of a specific characteristic
- * <FUNCTIONALITY> (optional development) : typology of classes (*2)
- * <SUB FUNCTIONALITY> (optional development) : typology of classes (*2)
+ * <_TYPE_> : fixed prefix (default com) -> can be either a country or an organization
+ * <_COMPANY_> : name of the owner of the product (by default cistec)
+ * <_CONTEXT/APP_> : name of the field or asset of the project
+ * <_MODULE_> (optional) : Name of a module (*1)
+ * <_FEATURES_> (optional development) : Name of a specific characteristic
+ * <_FUNCTIONALITY_> (optional development) : typology of classes (*2)
+ * <_SUB FUNCTIONALITY_> (optional development) : typology of classes (*2)
 
 See Definitions and Acronyms
 
@@ -47,10 +51,9 @@ See Definitions and Acronyms
 
 
 
-## <a name="use-examples">Use Examples</a>
+## Use Examples
 
-com.acme.architecture.testing
-com.acme.architecture.persistence
-com.acme.core
-com.acme.web
-
+ * com.acme.architecture.testing
+ * com.acme.architecture.persistence
+ * com.acme.core
+ * com.acme.web

@@ -1,6 +1,8 @@
-# Nomenclature Projects Name
+# Nomenclature Repository
 
-Identifier used on IT projects
+The identifier used to name the repositories
+
+Will match the name of the project
 
 
 
@@ -16,9 +18,9 @@ Step to follow:
 
 
 
-## Check Prerequisites
+## <a name="check-prerequisites">Check Prerequisites</a>
 
- * The use of Loweb Case nomenclature is recommended or, alternatively, the separation of words by the characters "-" or "_"
+ * The use of CamelCase nomenclature is recommended or, alternatively, the separation of words by the characters "-" or "_"
  * It is recommended that this be unique
  * English is recommended
  * The DESCRIPTION field should not contain the name of the application as it is already reflected in the COMPANY/PROJECT field
@@ -27,14 +29,14 @@ Step to follow:
 
 
 
-## Format
+## <a name="format">Format</a>
 
 <_COMPANY/PROJECT_>(-<_PROYECT_TYPE_>)?(-<_DESCRIPTION_>)?
 
 Details
 
  * <_COMPANY/PROJECT_> : Text string representing either the company or project name
- * <_PROYECT_TYPE_> (optional) : Indicator of the scope of the project/module → May be optional
+ * <_PROYECT_TYPE_> (optional) : Text string representing indicator of the scope of the project/module → May be optional
  * <_DESCRIPTION_> (optional) : Informative details
     * Facilitates the establishment of a typology of subprojects
 
@@ -42,7 +44,7 @@ Details
 
 
 
-## Use Examples
+## <a name="use-examples">Use Examples</a>
 
  * acme-architecture-testing
  * acme-architecture-core
