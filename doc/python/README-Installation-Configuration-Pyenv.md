@@ -5,8 +5,10 @@ Pyenv is a tool for managing Python versions installations
 [pyenv](https://github.com/pyenv/pyenv)
 
 * Works even if you have Python installed on your system previously
-* Allows you to install multiple and different versions of Python on your system
+* Allows you to install multiple and different versions of Python on your system -> setup isolated python environment
 * Allows you to manage Python versions
+* Avoid having to work with the System Python (Mac or Linux by default)
+  * The Mac operating system uses this install of Python (located in usr/bin/python) to perform critical tasks needed for the smooth operation of your computer
 * Reduces the problems of conflicting dependencies
 * Allows to activate a version of Python : global or local
 * Define virtual environments
@@ -61,7 +63,7 @@ Step to follow:
 
 
 
-## <a name="check-prerequisites">Check Prerequisites</a>
+## Check Prerequisites
 
 It is available together with the Python installation
 
@@ -74,7 +76,7 @@ Execute the following command via console
 
 ```bash
 # Windows (with powershell)
-where.exe python
+$ where.exe python
 
 # Linux / Max
 $ which python
@@ -84,7 +86,7 @@ $ which python
 
 
 
-## <a name="install-pyenv">Install Pyenv</a>
+## Install Pyenv
 
 Certain operating system-dependent pre-installed system dependencies are required
 
@@ -104,24 +106,22 @@ Create the folder in .pyenv/ in $HOME (c:\users/[user]\.pyenv)
 Download the package https://github.com/pyenv-win/pyenv-win/archive/master.zip and unzip it in the above folder.
 
 ```bash
-# Añadimos PYENV and PYENV_HOME como variables de entorno
+# Add PYENV and PYENV_HOME as environment variables
 PS [System.Environment]::SetEnvironmentVariable('PYENV',$env:USERPROFILE + "\.pyenv\pyenv-win\","User")
 PS [System.Environment]::SetEnvironmentVariable('PYENV_HOME',$env:USERPROFILE + "\.pyenv\pyenv-win\","User")
 
-# Añadimos las carpetas al PATH de nuestro usuario
+# Add the folders to our user's PATH
 PS [System.Environment]::SetEnvironmentVariable('path', $env:USERPROFILE + "\.pyenv\pyenv-win\bin;" + $env:USERPROFILE + "\.pyenv\pyenv-win\shims;" + [System.Environment]::GetEnvironmentVariable('path', "User"),"User")
 ```
 
-**Pyenv support for others**
-
-Documentation : 
+**Pyenv support for Linux**
 
 https://devguide.python.org/setup/#build-dependencies
 
 https://github.com/pyenv/pyenv
 
 
-For Mac with Brew : brew install pyenv
+**Pyenv support for Mac**
 
 https://github.com/pyenv/pyenv#homebrew-on-macos
 
@@ -131,16 +131,13 @@ $ brew install pyenv
 
 # Install dependencies
 $ brew install openssl readline sqlite3 xz zlib
-
-# Install with Clone 
-$ pyenv install --list | grep " 3\.[9]"
 ```
 
 
 
 
 
-## <a name="verify-pyenv-version">Verify Pyenv Version</a>
+## Verify Pyenv Version
 
 Execute the following command via console
 
@@ -152,7 +149,7 @@ $ pyenv --version
 
 
 
-## <a name="verify-pyenv-installation-path">Verify Pyenv Intallation Path</a>
+## Verify Pyenv Intallation Path
 
 Execute the following command via console
 
@@ -175,7 +172,7 @@ PS (gcm pyenv).Path
 
 
 
-## <a name="load-values-shell">Load Values Shell</a>
+## Load Values Shell
 
 Execute the following command via console
 
@@ -188,7 +185,7 @@ $ echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.zshrc
 # Load environment var PYENV_ROOT en PATH
 $ echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.zshrc
 
-# Load intializer
+# Load initializer
 $ echo 'eval "$(pyenv init --path)"' >> ~/.zshrc
 $ echo 'eval "$(pyenv init -)"' >> ~/.zshrc
 
@@ -203,18 +200,18 @@ $ source ~/.zshrc
 $ brew install openssl readline sqlite3 xz zlib
 ```
 
-Other option
+Other option 1
 
 ```bash
-export PATH="$HOME/.pyenv/bin:$PATH"
-export PATH="$PYENV_ROOT/bin:$PATH"
+$ export PATH="$HOME/.pyenv/bin:$PATH"
+$ export PATH="$PYENV_ROOT/bin:$PATH"
 
 if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
 fi
 ```
 
-Other option 
+Other option  2
 
 ```bash
 export PYENV_ROOT="$HOME/.pyenv"
@@ -224,15 +221,23 @@ eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 ```
 
+Other option 3
+
+```bash
+echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.zshrc
+echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.zshrc
+echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init -)"\nfi' >> ~/.zshrc
+```
 
 
 
 
-## <a name="verify-available-managed-pyhton-distribution">Verify Available Managed Python Distributions</a>
+
+## Verify Available Managed Python Distributions
 
 Shows all Python distributions available and usable.
 
-* There are many versions and many distributions depending on your needs.
+* There are many versions and many distributions depending on your needs
 
 ```bash
 # Show all Python  versions / distributions (CPython, etc.) -> Availables
@@ -246,7 +251,7 @@ $ pyenv install --list | grep " 3\.[9]"
 
 
 
-## <a name="install-python-version">Install Python Version</a>
+## Install Python Version
 
 Execute the following command via console
 
@@ -259,18 +264,18 @@ $ pyenv install -v 3.9.4
 
 
 
-## <a name="verify-installations-from-pyenv">Verify Installations from Pyenv</a>
+## Verify Installations from Pyenv
 
 The current distributions installed from pyevn are placed in other locations to facilitate their management
 
 **Verify installed distributions from their own directories**
 
 ```bash
-# Verify Python 3.9.4 installation
-$ ls ~/.pyenv/versions/3.9.4
- 
 # Verify all installations
 $ ls ~/.pyenv/versions/
+
+# Verify Python 3.9.4 installation
+$ ls ~/.pyenv/versions/3.9.4
 ```
 
 They will be identified because they will be directory with the version name
@@ -285,11 +290,16 @@ $ pyenv versions
 * The available versions will be shown and marked with a * the one that is active at that moment, which will coincide with the one triggered with "-V".
 * The one indicated as "system" refers to the Python of the system.
 
+```bash
+# Verify version active
+$ pyenv version
+```
 
 
 
 
-## <a name="uninstall-python-version">Uninstall Python Version</a>
+
+## Uninstall Python Version<
 
 **Removing a distribution from pyenv**
 
@@ -300,13 +310,10 @@ Execute the following command via console
 $ ls ~/.pyenv/versions/
  
 # Remove installation
-$ pyenv uninstall -v 3.9.4
+$ pyenv uninstall 3.9.4
 ```
 
 * Select one of the facilities available from pyenv
-
-
-
 
 
 **Removing a distribution from the installation directories**
@@ -325,14 +332,14 @@ $ rm -rf ~/.pyenv/versions/3.9.4
 
 
 
-## <a name="active-python-version">Active Python Version</a>
+## Active Python Version
 
 **Global Activation**
 
 Execute the following command via console
 
 ```bash
-# Verify global installation -> Referenciada en ~/.pyenv/version
+# Verify global installation -> Reference ~/.pyenv/version
 $ pyenv global
  
 # Activate global version python or change
@@ -343,6 +350,12 @@ $ pyenv versions
  
 # Verify active version (2)
 $ python -V
+
+# Verify active version (3)
+$ cat ~/.pyenv/version
+
+# Test
+$ python -m test
 ```
 
 Set the version you want to install from the available ones
@@ -352,7 +365,7 @@ Set the version you want to install from the available ones
 Execute the following command via console
 
 ```bash
-# Activate local version python or change
+# Activate local version python or change -> Reference .python-version
 $ pyenv local 3.9.4
  
 # Verify active version with *
@@ -365,10 +378,17 @@ $ python -V
 Create a .python-version file in the current directory.
 Enable this environment for this case
 
+```bash
+
+# Verify local active version 
+cat .python-version
+```
 
 
 
-## <a name="verify-current-python-version">Verify Current Python Version</a>
+
+
+## Verify Current Python Version
 
 Execute the following command via console
 
@@ -378,18 +398,21 @@ $ cat ~/.pyenv/version
  
 # Verificar version “current selected”
 $ pyenv version
+
+# Verify python pip version 
+$ pyenv which python
 ```
 
 
 
 
 
-## <a name="verify-current-pip-path">Verify Current Pip Path</a>
+## Verify Current Pip Path
 
 Execute the following command via console
 
 ```bash
-pyenv which pip
+$ pyenv which pip
 ```
 
 Show a path dependent on the active python version

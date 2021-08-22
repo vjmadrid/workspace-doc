@@ -1,8 +1,11 @@
 # Installation / Configuration Pyenv-Virtualenvs
 
-pyenv-virtualenvs is a pyenv plugin for working with virtual environments
+pyenv-virtualenvs is a pyenv plugin for working with virtual environments for across varying versions of Python
 
-Used in conjunction with pyenv
+* Use on Linux-like systems
+* Manage virtualenv and conda enviroments
+* Used in conjunction with pyenv -> multiple Python version and multiple virtual environments
+* Ensure that all libraries and dependancies that are installed in that folder are completely isolated
 
 https://github.com/pyenv/pyenv-virtualenv
 
@@ -20,7 +23,7 @@ Step to follow:
 
 
 
-## <a name="check-prerequisites">Check Prerequisites</a>
+## Check Prerequisites
 
 Require pyenv
 
@@ -28,31 +31,45 @@ Require pyenv
 
 
 
-## <a name="install-pyenv-virtualenvs">Install Pyenv-Virtualenvs</a>
+## Install Pyenv-Virtualenvs
 
 Execute the following command via console
 
 ```bash
-# Installation
+# Installation Option 1
 $ git clone https://github.com/pyenv/pyenv-virtualenv.git $(pyenv root)/plugins/pyenv-virtualenv
- 
+
+# Installation Option 2
 $ git clone https://github.com/yyuu/pyenv-virtualenv.git ~/.pyenv/plugins/pyenv-virtualenv
  
-# Brew
+# Intallation Brew Option
 $ brew install pyenv-virtualenv
- 
-# Load initializer
- 
-echo 'eval "$(pyenv virtualenv-init -)"' >> ~/.zshrc
+```
+
+Execute initializer
+
+```bash
+# Load initializer depends shell
+#   * Bash shell
+$ echo 'eval "$(pyenv virtualenv-init -)"' >> ~/.bashrc
+#   * Z shell
+$ echo 'eval "$(pyenv virtualenv-init -)"' >> ~/.zshrc
  
 # Reset ~/.zshrc
 $ source ~/.zshrc
 ```
 
+Execute Reset Shell
+
+```bash
+$ exec "$SHELL"
+```
 
 
 
-## <a name="create-virtual-environment">Create Virtual Environment</a>
+
+
+## Create Virtual Environment
 
 Execute the following command via console
 
@@ -61,31 +78,54 @@ Execute the following command via console
 #   pyenv virtualenv <python_version> <environment_name>
  
 # Create Virtual Environment for 3.9.4 version with name venvacme3.9.4
-$ pyenv virtualenv 3.9.4 venvacme3.9.4
+pyenv virtualenv 3.9.4 venvacme3.9.4
  
 # Create Virtual Environment for active version with custom name
 #   pyenv virtualenv <environment_name>
  
 # Create Virtual Environment for active version with name venvacme3.9.4
-$ pyenv virtualenv venvacme3.9.4
+pyenv virtualenv venvacme3.9.4
 ```
 
+Verify that a folder exists $(pyenv root)/versions with the <environment_name>
 
 
 
-## <a name="remove-virtual-environment">Remove Virtual Environment</a>
+
+## Show Virtual Environments
 
 Execute the following command via console
 
 ```bash
 # Remove virtual environment
-$ pyenv virtualenv 3.9.4 venvacme3.9.4
+$ pyenv virtualenvs
 ```
 
 
 
 
-## <a name="activate-virtual-environment">Activate Virtual Environment</a>
+## Remove Virtual Environment
+
+Execute the following command via console
+
+```bash
+# Activate Virtual Environment
+#   pyenv uninstall <environment_name>
+
+# Option 1 : Remove virtual environment 
+$ pyenv uninstall venvacme3.9.4
+
+# Option 2 : Remove virtual environment 
+$ pyenv virtualenv-delete venvacme3.9.4
+```
+
+Removing the directories in $(pyenv root)/versions and $(pyenv root)/versions/{version}/envs will delete the virtualenv
+
+
+
+
+
+## Activate Virtual Environment
 
 Execute the following command via console
 
@@ -96,8 +136,8 @@ Execute the following command via console
 # Activate custom virtual environment
 $ pyenv activate venvacme3.9.4
  
-# Activar un entorno virutal de forma local
-$ pyenv local myproject
+# Activate local custom virtual environment
+$ pyenv local venvacme3.9.4
 ```
 
 The active environment will be displayed at the prompt
@@ -107,7 +147,7 @@ A Python version file can be created which indicates the current active version.
 
 
 
-## <a name="deactivate-virtual-environment">Deactivate Virtual Environment</a>
+## Deactivate Virtual Environment
 
 Execute the following command via console
 
@@ -117,16 +157,3 @@ $ pyenv deactivate
 ```
 
 
-
-
-## <a name="verify-virtual-environment">Verify Virtual Environment</a>
-
-Execute the following command via console
-
-```bash
-# Verify python pip version 
-$ pyenv which python
- 
-# Verify active pip version 
-$ pyenv which pip
-```
