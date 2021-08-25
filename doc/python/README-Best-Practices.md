@@ -1,8 +1,8 @@
-https://docs.python-guide.org/writing/structure/
+READED
 
-https://kenreitz.org/essays/2013/01/27/repository-structure-and-python
-
-https://medium.com/analytics-vidhya/structuring-python-code-best-practices-from-over-10-blogs-2e33cbb83c49
+    * https://docs.python-guide.org/writing/structure/
+    * https://kenreitz.org/essays/2013/01/27/repository-structure-and-python
+    * https://medium.com/analytics-vidhya/structuring-python-code-best-practices-from-over-10-blogs-2e33cbb83c49
 
 https://github.com/johnthagen/python-blueprint
 

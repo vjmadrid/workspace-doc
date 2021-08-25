@@ -1,31 +1,60 @@
-# Python Pacakge
+# Python Package
 
-The phrase “Python Package” is an overloaded term, being associated with everything from .py files to .tar archives to .whl distributions. This quick read introduces the various ways that Python code has been made available for use, as well as how to work with them
+The phrase “Python Package” is an overloaded term, being associated with everything (.py files, .tar archives, etc.)
 
-
-## Types
-
-No matter which type of package you prefer to work with, you should always build Python packages from source to ensure against compromised binaries
-
-
-
-### Python Modules
-
-Python is an interpreted language. As such, Python code is executed by an interpreter at runtime, rather than compiled into a binary as is the case with languages like C/C++. In its simplest form, Python code that performs some kind of function or method can be distributed as a module in the form of a text-based .py file.
+- [Package Types](#package-types)
+- [Package Versions](#package-versions)
+- [Virtual Environment Installations](#virtual-environment-installations)
 
 
 
-### Python Libraries
-
-The Python language itself ships with a standard set of libraries containing basic functions and methods. Libraries assemble collections of modules into a set of reusable code that developers can use to make more complex programs.
 
 
 
-### Python Packages
+## Package Types
 
-Python code of any complexity typically requires multiple Python modules (or .py files) arranged in a hierarchy (e.g., foo.py calls bar.py, which calls baz.py) and contained in a directory structure. In order to preserve this directory structure, Python packages are typically shipped as .tar or .gz files called “source distribution packages,” or sdist for short. Because sdists only work with pure Python deployments in which you know which version of Python your environment supports, it’s largely been replaced by the more flexible wheel (.whl) distribution format.
+>No matter which type of package you prefer to work with, you should always build Python packages from source to ensure against compromised binaries
+>
+>Python code is executed by an interpreter at runtime, rather than compiled into a binary as is the case with languages like C/C++
 
-You can add Python .tar and .gz packages to your environment with a simple pip install command, or else install them using a script. You can also uninstall Python packages using pip, as well
+There are different types of Python packages :
+
+- [Modules](#modules)
+- [Libraries](#libraries)
+- [Packages](#packages)
+
+
+
+### Modules
+
+Python code that performs some kind of function or method can be distributed as a module in the form of a **text-based .py file**
+
+
+
+### Libraries
+
+Python language itself ships with a standard set of libraries containing basic functions and methods (os, etc.)
+
+Libraries assemble collections of modules into a set of reusable code that developers can use to make more complex programs
+
+
+
+### Packages
+
+Python code of any complexity typically requires :
+
+* Multiples .py files
+* Multiple modules
+* Combinated
+* Orchestration, sequenciallity o  hierarchy
+
+A package is a directory structure 
+
+A packages are typically shipped as .tar or .gz files called “source distribution packages,” or sdist for short. 
+
+* **sdists** only work with pure Python deployments in which you know which version of Python your environment supports
+* **wheel .whl** more flexible wheel distribution
+
 
 
 
@@ -87,7 +116,7 @@ Virtual environments avoid dependency conflict issues that arise when you instal
 
 
 
-## Python Package Versions
+## Package Versions
 
 Any well maintained Python package is constantly being upgraded and improved. The source code for the latest version of non-commercial packages can typically be found on Github/Gitlab, and the latest packaged version can be found on Python’s central repository, the Python Package Index (aka PyPI).
 
