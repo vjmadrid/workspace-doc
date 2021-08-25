@@ -40,6 +40,15 @@ https://github.com/codekoala/docker-pypi/blob/master/entrypoint.sh
 
 https://github.com/bmihelac/docker-images-with-private-python-packages-example
 
+
+https://github.com/pypa/sampleproject/
+
+https://antonz.org/python-packaging/
+
+https://github.com/nalgeon/podsearch-py
+
+https://github.com/nalgeon/podsearch-py/blob/main/Makefile
+
 Requires specific:
 
 * Build tools 
