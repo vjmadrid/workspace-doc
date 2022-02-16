@@ -1,6 +1,6 @@
 # Installation / Configuration Setup.py
 
-**Setup.py** is the most important file. It's the file where define various aspects of your project are configured
+**Setup.py** is the most important file where define various aspects of your project are configured
 
 
 Python file that relies only on the standard library can be redistributed and reused without the need to use setuptools.
@@ -30,8 +30,10 @@ $ python setup.py install
 
 
 
-* Need to install setuptools
-
+* Need to install setuptools that is a rich and complex program
+    * Register your package on pypi
+    * Build egg, source, and window installer ‘distributables’
+    * Upload these ‘distributables’ to pypi
 
 [setuptools](https://pypi.org/project/setuptools/)
 
@@ -56,20 +58,32 @@ It is available together with the Python installation
 
 
 
-## Install Pip
+## Install Setup.py
+
+You have to create the file on the project
+
+* is created at project level
+
+
+
+
+
+## Verify Setup.py Version
 
 N/A
 
 
 
-
-
-## Verify Pip Version
+## Use Setup.py
 
 Execute the following command via console
 
 ```bash
-# For Python 2.X.X
-pip --version
+# Sintax
+python setup.py <some_command> <options>
+
+# Help
+python setup.py --help-commands
+
 ```
 

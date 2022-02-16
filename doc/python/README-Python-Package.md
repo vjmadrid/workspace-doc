@@ -10,7 +10,6 @@ The phrase “Python Package” is an overloaded term, being associated with eve
 
 
 
-
 ## Package Types
 
 >No matter which type of package you prefer to work with, you should always build Python packages from source to ensure against compromised binaries
@@ -33,7 +32,7 @@ Python code that performs some kind of function or method can be distributed as 
 
 ### Libraries
 
-Python language itself ships with a standard set of libraries containing basic functions and methods (os, etc.)
+Python language itself ships with a standard set of libraries containing basic functions and methods (import os, import sys, etc.)
 
 Libraries assemble collections of modules into a set of reusable code that developers can use to make more complex programs
 
@@ -48,7 +47,7 @@ Python code of any complexity typically requires :
 * Combinated
 * Orchestration, sequenciallity o  hierarchy
 
-A package is a directory structure 
+A package is a directory structure
 
 A packages are typically shipped as .tar or .gz files called “source distribution packages,” or sdist for short. 
 
@@ -62,8 +61,10 @@ A packages are typically shipped as .tar or .gz files called “source distribut
 ### Python Wheels
 
 A .whl file (or wheel) is commonly referred to as a “built package” format. Wheels accomplish two goals:
-    * Python Binary Distributions – Since interpreted code is typically slower than binary code, Python developers will sometimes incorporate routines written in C in order to speed up certain tasks. Wheels allow for the distribution of both precompiled binary code (for a specific OS) and the original source code (so users can compile it for their OS).
-    * Python Built Distributions – Like most modern languages, Python supports modular development enabling developers to reuse existing code in their new codebase. A wheel ensures that all required code (typically located in multiple files) are distributed together
+
+* **Python Binary Distributions :** Since interpreted code is typically slower than binary code, Python developers will sometimes incorporate routines written in C in order to speed up certain tasks. Wheels allow for the distribution of both precompiled binary code (for a specific OS) and the original source code (so users can compile it for their OS)
+    
+* **Python Built Distributions :** Like most modern languages, Python supports modular development enabling developers to reuse existing code in their new codebase. A wheel ensures that all required code (typically located in multiple files) are distributed together
 
 When you pip install a Python distribution that incorporates a wheel, pip will install all the files specified in the wheel
 
@@ -71,7 +72,9 @@ When you pip install a Python distribution that incorporates a wheel, pip will i
 
 ### Python Frameworks
 
-Frameworks collect together a bundle of packages or modules that handle all the lower level functions required by a class of applications. For example, web frameworks bundle together packages that handle things like connection protocols, sockets and thread management in order to make web application development simpler. Frameworks are typically distributed in the .whl format.
+Frameworks collect together a bundle of packages or modules that handle all the lower level functions required by a class of applications
+
+For example, web frameworks bundle together packages that handle things like connection protocols, sockets and thread management in order to make web application development simpler. Frameworks are typically distributed in the .whl format.
 
 
 
@@ -94,8 +97,8 @@ When installing or updating Python packages, it’s not uncommon to run into iss
 
 Global or System-wide Installations – whenever possible, avoid relying on Python packages that are installed globally in an OS-dependent location for your projects (many operating systems install a system-wide version of Python by default). Issues that can arise with globally installed Python packages include:
 
-* Dependency Conflicts – simply put, two different Python packages may rely on the same library, but not the same version of that library. Installing a Python package globally may overwrite an older version of a dependency, breaking Python packages that relied on the older version. To avoid dependency conflicts, use virtual environments (see below).
-* Failed Installs – if you’re using Linux, the following is a typical scenario:
+* **Dependency Conflicts :** simply put, two different Python packages may rely on the same library, but not the same version of that library. Installing a Python package globally may overwrite an older version of a dependency, breaking Python packages that relied on the older version. To avoid dependency conflicts, use virtual environments (see below).
+* **Failed Installs :** if you’re using Linux, the following is a typical scenario:
 Python was installed using your Linux distibution’s native package manager (yum, apt, etc) to directories that require admin/root permissions to modify
 If you use pip to install a Python package, either:
 You’re logged in as a user so the install will fail since you don’t have admin/root permission, or
@@ -105,7 +108,7 @@ You’re logged in as root and overwrite, update or add new packages, which mean
 
 
 
-## Virtual Environment Installations 
+## Virtual Environment Installations
 
 key best practice is to always create a new virtual environment for each and every project. For example:
 

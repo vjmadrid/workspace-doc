@@ -49,6 +49,12 @@ https://github.com/nalgeon/podsearch-py
 
 https://github.com/nalgeon/podsearch-py/blob/main/Makefile
 
+https://docs.python.org/3/howto/logging.html#logging-basic-tutorial
+
+https://docs.python.org/3/howto/logging.html#logging-advanced-tutorial
+
+
+
 Requires specific:
 
 * Build tools 

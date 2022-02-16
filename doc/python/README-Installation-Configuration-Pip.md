@@ -2,18 +2,21 @@
 
 **pip (pip installs packages)** is command-line interface (CLI) tool for the package management standard for Python
 
-https://pip.pypa.io/en/stable/user_guide/
+[Web](https://pypi.org/project/pip/)
+[Documentation](https://pip.pypa.io/en/stable/user_guide/)
+[Pip](https://pip.pypa.io/en/stable/)
 
-* Default / Standar tool for installation method for installing Python packages
-* Has been part of the Python core language since Python 3.4 / 2.7.9.
-* Pip can installs packages globally or it can install them for specific users
-* Pip relies on a strong community-maintained package repository to install third party packages that are not included with your standard Python 3 installation
-* Python modules available on the [Python Module Index](https://docs.python.org/3/py-modindex.html)
+
+
+Features :
+
+* Default / Standard tool for installation method for installing Python packages
+* Has been part of the Python core language since Python >=3.4 / >=2.7.9.
+* Can installs packages : globally or specific users
+* Relies on a strong community-maintained package repository [Python Module Index](https://docs.python.org/3/py-modindex.html) to install third party packages that are not included with your standard Python 3 installation
     * it automatically retrieves the package and all its dependencies from the Python Package Index (PyPI) and installs them locally on your system
 * Provides diferent functions : install, uninstall and manage packages
 
-[pip](https://pip.pypa.io/en/stable/)
-[pip client](https://pip.pypa.io/en/stable/)
 
 Requirements.Txt And Dependencies
 Pip does not provide true dependency resolution, but this can be solved by using it in conjunction with a requirements.txt file. Requirements.txt files can be used to make pip resolve dependency conflicts between different packages.
@@ -98,7 +101,10 @@ pip install –upgrade pip
 
 ## Install Package
 
-### Specific package
+- [Specific Package](#specific-package)
+- [File Package](#file-package)
+
+### Specific Package
 
 Execute the following command via console
 
@@ -113,7 +119,7 @@ pip3 install <package_name>
 pip install "<package_name> == <version>"
 ```
 
-### File package
+### File Package
 
 Execute the following command via console
 

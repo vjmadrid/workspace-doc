@@ -187,7 +187,7 @@ Steps to follow :
 
 
 
-### Installing Python on Linux
+### Installing Python on Linux
 
 Ways : OS package manager and/or from the Python source code
 

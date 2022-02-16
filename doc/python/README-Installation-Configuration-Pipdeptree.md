@@ -1,14 +1,19 @@
 # Installation / Configuration Pipdeptree
 
-**Pipdeptree** is a command-line tool for displaying installed Python packages in a dependency tree. 
+**Pipdeptree** is a command-line tool for displaying installed Python packages in a dependency tree
 
-* Visualize a dependency conflict but  not provide for resolution of the conflict
+[Web](https://pypi.org/project/pipdeptree/)
+
+
+Features:
+
+* Visualize a dependency conflict but not provide for resolution of the conflict
 * Help making the hierarchy of packages and dependencies in an environment more understandable : global and virtual environment
-* better than using the pip freeze and pip list commands, which only display packages in a flat list without showing which packages are top level and which are dependencies
+* Better than using the pip freeze and pip list commands, which only display packages in a flat list without showing which packages are top level and which are dependencies
+
 
 
  
-
 
 Step to follow:
 
@@ -16,6 +21,7 @@ Step to follow:
 - [Install Pipdeptree](#install-pipdeptree)
 - [Verify Pipdeptree Version](#verify-version-pipdeptree)
 - [Use Pipdeptree](#use-pipdeptree)
+
 
 
 

@@ -1,24 +1,27 @@
 # Installation / Configuration Pyenv
 
-Pyenv is a tool for managing Python versions installations -> Python version manager 
+**pyenv** is a client-command tool for managing Python versions installations -> Python version manager 
 
-[pyenv](https://github.com/pyenv/pyenv)
+[Web](https://github.com/pyenv/pyenv)
 
+>**Important**
+>
+>* Avoid having to work with the System Python (Mac or Linux by default)
+>
+>The Mac operating system uses this install of Python (located in usr/bin/python) to perform critical tasks needed for the smooth operation of your computer (Python 2.7)
+
+Featrues : 
+
+* Allows install and manage multiple and different versions / distribution of Python on your system -> setup isolated python environment
 * Works even if you have Python installed on your system previously
-* Allows install multiple and different versions of Python on your system -> setup isolated python environment
-* Allows manage multiple Python versions
-* Avoid having to work with the System Python (Mac or Linux by default)
-  * The Mac operating system uses this install of Python (located in usr/bin/python) to perform critical tasks needed for the smooth operation of your computer
+* Is a Bash extension and will not work on Windows outside of the Windows subsystem for Linux but exist a Win
 * Reduces the problems of conflicting dependencies
 * Allows to activate/change a version of Python : global or local
-* Define virtual environments
 * Allows to activate different virtual environments
 * Works very well with Mac → Install with homebrew
+* Define, create and manage virtual environments (optional)
 * Has plugins that add functionality pyenv-virtualenv, pyenv-doctor, etc.
-* create and manage virtual environments. 
 * ...
-
-It is advisable not to use the System version of Python
 
 
 
@@ -26,10 +29,6 @@ It is advisable not to use the System version of Python
 >
 > * Run : which python
 > * It is usually located in /usr/bin/python by default unless you are using a framework manager
-
-pyenv is a Bash extension and will not work on Windows outside of the Windows subsystem for Linux
-
-But exist a win project
 
 
 Python Version Priority
@@ -67,13 +66,14 @@ Step to follow:
 
 
 
-
 ## Check Prerequisites
 
 It is available together with the Python installation
 
 * Since Python 2 version 2.7.9
 * Since Python 3 version 3.4
+
+
 
 **Verify Python Installation Path**
 
@@ -165,13 +165,12 @@ $ which pyenv
 ```
 
 
-Windows 
+Windows
 
 
 ```bash
 PS (gcm pyenv).Path
 ```
-
 
 
 
