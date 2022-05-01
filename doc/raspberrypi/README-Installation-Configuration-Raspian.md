@@ -17,6 +17,8 @@ https://medium.com/geekculture/getting-started-with-raspberry-pi-and-installing-
 
 
 
+
+
 ## Install Raspbian
 
 Execute the following command via console
@@ -27,6 +29,8 @@ xxx
 
 
 
+
+
 ### Update your system
 
 Execute the following command via console
@@ -34,6 +38,9 @@ Execute the following command via console
 ```bash
 sudo apt update && sudo apt upgrade
 ```
+
+
+
 
 
 ### Enable sudo without password
@@ -56,6 +63,9 @@ pi ALL=(ALL) NOPASSWD: ALL
 Press CTRL+X, then enter to save the changes
 
 
+
+
+
 ### Install net-tools
 
 Utility for managing network communications from the command line
@@ -65,6 +75,9 @@ Execute the following command via console
 ```bash
 sudo apt install net-tools
 ```
+
+
+
 
 
 ### Install git
@@ -81,6 +94,9 @@ git config --global user.name "Your Name"
 git config --global user.email "youremail@yourdomain.com"
 
 git config --list
+
+
+
 
 
 ### Install openssh-server
@@ -109,6 +125,8 @@ sudo apt install make libssl-dev libghc-zlib-dev libcurl4-gnutls-dev libexpat1-d
 
 
 
+
+
 ### Connect SSH 
 
 Execute the following command via console
@@ -134,19 +152,13 @@ ssh <USER>@<IP_ADDRESS>
 
 
 
+## Run all scripts from any directory
 
+1. Locate the file : ~/.bashrc o ~/.zshrc  
 
+2. Add the following to the file
 
-## Verify Docker
-
-Execute the following command via console
 
 ```bash
-docker --version
-```
-
-Execute the following command via console
-
-```bash
-docker run hello-world
+export PATH="$HOME/.local/bin:$PATH"
 ```
