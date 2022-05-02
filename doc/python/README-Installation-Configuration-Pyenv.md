@@ -4,6 +4,8 @@
 
 [Web](https://github.com/pyenv/pyenv)
 
+https://pythongranada.github.io/blog/pyenv.html
+
 >**Important**
 >
 >* Avoid having to work with the System Python (Mac or Linux by default)
