@@ -53,6 +53,41 @@ https://docs.python.org/3/howto/logging.html#logging-basic-tutorial
 
 https://docs.python.org/3/howto/logging.html#logging-advanced-tutorial
 
+EJEMPLOS DE CODIGO
+
+* https://aaronluna.dev/categories/tutorial-series/
+* https://aaronluna.dev/series/flask-api-tutorial/part-1/
+* https://aaronluna.dev/blog/error-handling-python-result-class/
+* https://github.com/a-luna/flask-api-tutorial/blob/master/src/flask_api_tutorial/api/auth/endpoints.py
+* https://github.com/po5i/flask-mini-rest
+* https://github.com/j2logo/tutorial-flask
+
+* https://github.com/agusnavce/keycloak_example
+* https://codefellows.github.io/sea-python-401d4/lectures/python_packaging_1.html#specifying-dependencies
+* https://github.com/j2logo/tutorial-flask.git
+* https://j2logo.com/tutorial-flask-leccion-7-parametros-de-configuracion-proyecto/#config-instance
+* https://github.com/X1Zeth2X/flask-restx-boilerplate/
+* https://github.com/tenable/flask-logging-demo
+* https://github.com/Kinto/kinto/tree/master/kinto/core
+
+# https://testdriven.io/blog/flask-pytest/
+
+* https://flask-restx.readthedocs.io/en/latest/parsing.html
+* https://marshmallow.readthedocs.io/en/stable/_modules/marshmallow/exceptions.html
+
+* https://github.com/jonatasoli/example-flask-restx
+* https://github.com/X1Zeth2X/flask-restx-boilerplate
+* https://github.com/po5i/flask-mini-rest
+* https://testdriven.io/blog/flask-pytest/
+
+FLASK
+
+* https://testdriven.io/blog/flask-contexts/
+* https://testdriven.io/blog/flask-contexts-advanced/
+* https://gitlab.com/patkennedy79/flask_user_management_example/-/blob/main/project/models.py
+
+
+
 
 
 Requires specific:
