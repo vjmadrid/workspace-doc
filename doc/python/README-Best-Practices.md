@@ -76,8 +76,6 @@ EJEMPLOS DE CODIGO
 * https://marshmallow.readthedocs.io/en/stable/_modules/marshmallow/exceptions.html
 
 * https://github.com/jonatasoli/example-flask-restx
-* https://github.com/X1Zeth2X/flask-restx-boilerplate
-* https://github.com/po5i/flask-mini-rest
 * https://testdriven.io/blog/flask-pytest/
 
 FLASK
