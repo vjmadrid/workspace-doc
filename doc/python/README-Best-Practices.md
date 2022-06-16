@@ -85,7 +85,20 @@ FLASK
 * https://gitlab.com/patkennedy79/flask_user_management_example/-/blob/main/project/models.py
 
 
+https://testdriven.io/blog/dockerizing-flask-with-postgres-gunicorn-and-nginx/
+https://www.geeksforgeeks.org/load-balancing-flask-application-using-nginx-and-docker/
+https://www.patricksoftwareblog.com/how-to-configure-nginx-for-a-flask-web-application/
+https://www.patricksoftwareblog.com/
 
+
+hadolint:
+	@ ./test/linting/lint.sh hadolint
+
+shellcheck:
+	@ ./test/linting/lint.sh shellcheck
+
+eclint:
+	@ ./test/linting/lint.sh eclint
 
 
 Requires specific:
