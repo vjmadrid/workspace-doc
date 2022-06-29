@@ -83,13 +83,61 @@ FLASK
 * https://testdriven.io/blog/flask-contexts/
 * https://testdriven.io/blog/flask-contexts-advanced/
 * https://gitlab.com/patkennedy79/flask_user_management_example/-/blob/main/project/models.py
+* https://blog.miguelgrinberg.com/post/handling-file-uploads-with-flask/page/0
 
+https://github.com/pingidentity/pingone-sample-python/blob/master/services/auth.py
 
 https://testdriven.io/blog/dockerizing-flask-with-postgres-gunicorn-and-nginx/
 https://www.geeksforgeeks.org/load-balancing-flask-application-using-nginx-and-docker/
 https://www.patricksoftwareblog.com/how-to-configure-nginx-for-a-flask-web-application/
 https://www.patricksoftwareblog.com/
 
+
+flake8 : wrapper around Pyflakes, pycodestyle y McCabe
+    * https://github.com/DmytroLitvinov/awesome-flake8-extensions
+pep8-naming : PEP-8 naming conventions
+isort : used to automatically separate imports in your code into the following groups:
+    * 1standard library
+    * third-party
+    * local
+
+    python -m isort .
+    python -m isort my_module.py --check-only
+flake8-black
+flake8-bandit
+safety
+     safety check
+
+We used pytest's monkeypatch fixture to replace all calls to the get method from the requests module with the lambda callback that always returns an instance of MockedResponse.
+
+We used an object because requests returns a Response object.
+
+We can simplify the tests with the create_autospec method from the unittest.mock module. This method creates a mock object with the same properties and methods as the object passed as a parameter:
+
+Although pytest recommends the monkeypatch approach for mocking, the pytest-mock extension and the vanilla unittest.mock library from the standard library are fine approaches as well.
+
+Another important aspect of tests is code coverage. It's a metric which tells you the ratio between the number of lines executed during test runs and the total number of all lines in your code base. We can use the pytest-cov plugin for this, which integrates Coverage.py with pytest.
+
+Once installed, to run tests with coverage reporting, add the --cov option like so:
+
+Mutation Testing helps ensure that your tests actually cover the full behavior of your code. Put another way, it analyzes the effectiveness or robustness of your test suite. During mutation testing, a tool iterates through each line of your source code, making small changes (called mutations) that should break your code. After each mutation, the tool runs your unit tests and checks whether your tests fail or not. If your tests still pass, then your code didn't survive the mutation test.
+
+mutmut is a mutation testing library for Python. Let's look at it in action.
+
+$ mutmut run --paths-to-mutate reject_loan.py --tests-dir=.
+
+Some examples:
+
+pytest-django - provides a set of tools made specifically for testing Django applications
+pytest-xdist - is used to run tests in parallel
+pytest-cov - adds code coverage support
+pytest-instafail - shows failures and errors immediately instead of waiting until the end of a run
+For a full list of plugins, check out Plugin List from the docs.
+
+Type Checking
+Tests are code, and they should be treated as such. Like your business code, you need to maintain and refactor them. You may even have to deal with bugs from time to time. Because of this, it's a good practice to keep your tests short, simple, and straight to the point. You should also take care not to over test your code.
+
+Runtime (or dynamic) type checkers, like Typeguard and pydantic, can help to minimize the number of tests. Let's take a look at an example of this with pydantic.
 
 hadolint:
 	@ ./test/linting/lint.sh hadolint
