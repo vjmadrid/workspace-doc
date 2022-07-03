@@ -92,6 +92,7 @@ https://www.geeksforgeeks.org/load-balancing-flask-application-using-nginx-and-d
 https://www.patricksoftwareblog.com/how-to-configure-nginx-for-a-flask-web-application/
 https://www.patricksoftwareblog.com/
 
+https://github.com/pingidentity/pingone-sample-python/blob/master/services/auth.py
 
 flake8 : wrapper around Pyflakes, pycodestyle y McCabe
     * https://github.com/DmytroLitvinov/awesome-flake8-extensions
