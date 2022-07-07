@@ -94,6 +94,56 @@ https://www.patricksoftwareblog.com/
 
 https://github.com/pingidentity/pingone-sample-python/blob/master/services/auth.py
 
+
+https://github.com/MartinHeinz/python-project-blueprint/blob/master/Makefile
+https://github.com/MartinHeinz/python-project-blueprint/blob/master/Makefile
+https://gitlab.mpcdf.mpg.de/dboe/make/-/blob/master/python/Makefile
+https://gist.github.com/brutus/2dfd02917a939577a8dd561fb091e872
+https://gist.github.com/chaosmail/7d67a998922d3d07686e
+https://github.com/xolox/python-humanfriendly/blob/master/Makefile
+https://github.com/xolox/python-humanfriendly
+
+ https://mungingdata.com/python/how-pyenv-works-shims/
+ https://www.programmersought.com/article/56551601416/
+
+ http://patorjk.com/software/taag/#p=display&f=Standard&t=Templates
+ Starndard
+
+ http://patorjk.com/software/taag/#p=display&f=Standard&t=Templates
+ https://towardsdatascience.com/automating-every-aspect-of-your-python-project-6517336af9da
+ https://github.com/MartinHeinz/python-project-blueprint/blob/master/Makefile
+ https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world
+
+
+https://github.com/PyCQA
+
+
+https://github.com/cristobalvch/spotiscience/blob/main/spotiscience/credentials.py
+https://github.com/cristobalvch/spotiscience
+https://github.com/cristobalvch/spotiscience
+https://medium.com/datos-y-ciencia/spotiscience-una-herramienta-para-data-scientists-y-music-lovers-231b8dc631bc
+https://stmorse.github.io/journal/spotify-api.html
+https://github.com/lukejamestyler/free-programming-books
+https://github.com/jwallet/spy-spotify
+https://github.com/SathyaBhat/spotify-dl/blob/master/spotify_dl/spotify_dl.py
+https://github.com/SathyaBhat/spotify-dl/blob/master/spotify_dl/youtube.py
+https://github.com/JayChen35/spotify-to-mp3-python/blob/master/spotify_to_mp3.py
+https://github.com/LaurenceRawlings/savify/blob/main/savify/spotify.py
+https://github.com/ManuelArto/Spotify-to-Mp3/blob/master/API/GUI/main.py
+https://github.com/samuelantonioli/spotandfly
+https://github.com/schollz/spotifydownload/blob/master/getplaylist/getplaylist.go
+https://towardsdatascience.com/using-python-to-create-spotify-playlists-of-the-samples-on-an-album-e3f20187ee5e
+https://stmorse.github.io/journal/spotify-api.html
+https://stmorse.github.io/journal/spotify-api.html
+https://www.programcreek.com/python/?project_name=ritiek%2Fspotify-downloader#
+https://www.programcreek.com/python/example/97423/spotipy.Spotify
+https://github.com/plamere/spotipy
+https://jman4190.medium.com/build-your-own-spotify-wrapped-with-python-spotify-and-glide-apps-493dc7da20b
+https://levelup.gitconnected.com/extracting-and-analysing-spotify-tracks-with-python-d1466fc1dfee
+
+
+
+
 flake8 : wrapper around Pyflakes, pycodestyle y McCabe
     * https://github.com/DmytroLitvinov/awesome-flake8-extensions
 pep8-naming : PEP-8 naming conventions
