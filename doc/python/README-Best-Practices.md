@@ -146,7 +146,9 @@ https://levelup.gitconnected.com/extracting-and-analysing-spotify-tracks-with-py
 
 flake8 : wrapper around Pyflakes, pycodestyle y McCabe
     * https://github.com/DmytroLitvinov/awesome-flake8-extensions
+
 pep8-naming : PEP-8 naming conventions
+
 isort : used to automatically separate imports in your code into the following groups:
     * 1standard library
     * third-party
