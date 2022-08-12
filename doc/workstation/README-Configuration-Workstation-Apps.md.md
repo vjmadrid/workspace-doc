@@ -32,22 +32,38 @@ Step to follow:
 - [Wine](https://www.winehq.org/) - Run Windows Application
 
 - [Visual Studio Code](https://code.visualstudio.com) - IDE
+
+    * [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
+    * [Better Comments](https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments)
+    * [Compare Folders](https://marketplace.visualstudio.com/items?itemName=moshfeu.compare-folders)
+    * [Docker](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker)
+    * [Dracula Official Theme](https://marketplace.visualstudio.com/items?itemName=dracula-theme.theme-dracula)
     * [GitLenss - Git Supercharger](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens) - Git into VSC
-    * [Noctis]() - Ligth & Dark Themes
     * [ident-rainbow](https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow) - Marked identation
+    * [Intellicode](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode)
+    * [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
+    * [Noctis](https://marketplace.visualstudio.com/items?itemName=liviuschera.noctis) - Ligth & Dark Themes
+    * [open-in-browser](https://marketplace.visualstudio.com/items?itemName=coderfee.open-html-in-browser)
+    * [Polacode](https://marketplace.visualstudio.com/items?itemName=pnp.polacode)
+    * [Powermode](https://marketplace.visualstudio.com/items?itemName=hoovercj.vscode-power-mode)
+    * [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+    * [Prettier JSON](https://marketplace.visualstudio.com/items?itemName=mohsen1.prettify-json)
+    * [Swagger Viewer](https://marketplace.visualstudio.com/items?itemName=Arjun.swagger-viewer)
+    * [SynthWave 84](https://marketplace.visualstudio.com/items?itemName=RobbOwen.synthwave-vscode)
+    * [Trailing Spaces](https://marketplace.visualstudio.com/items?itemName=shardulm94.trailing-spaces)
+    * [xxx](yyy)
     * [XML Tools](https://marketplace.visualstudio.com/items?itemName=DotJoshJohnson.xml) - XML Formatting, XQuery and XPath Query Tool
     * [YAML](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml) - YAML Support
-    * [Compare Folders](https://marketplace.visualstudio.com/items?itemName=moshfeu.compare-folders) 
-    * [Remote - SSH](https://code.visualstudio.com/docs/remote/ssh) 
-    * [open-in-browser](https://marketplace.visualstudio.com/items?itemName=coderfee.open-html-in-browser) 
-    * [bracket-pair-colorizer-2](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer-2) 
-    * [better-comments](https://github.com/aaron-bond/better-comments) 
-    * [settings-sync](https://marketplace.visualstudio.com/itemdetails?itemName=Shan.code-settings-sync) 
-    * [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint) 
+
     * [rainbow - brackets](https://marketplace.visualstudio.com/items?itemName=2gua.rainbow-brackets)
-    * [prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+    * [xxx](yyy)
+    
+    * [Remote - SSH](https://code.visualstudio.com/docs/remote/ssh)
+    * [bracket-pair-colorizer-2](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer-2)
+    * [settings-sync](https://marketplace.visualstudio.com/itemdetails?itemName=Shan.code-settings-sync)
+    * [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)
     * [Python Support](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
-    * [Python Linting](https://code.visualstudio.com/docs/python/linting) 
+    * [Python Linting](https://code.visualstudio.com/docs/python/linting)
     * [Complete code](https://code.visualstudio.com/docs/editor/intellisense)
     * [Jinja2](https://marketplace.visualstudio.com/items?itemName=samuelcolvin.jinjahtml)
     * [Jinja2 Snippet kit](https://marketplace.visualstudio.com/items?itemName=WyattFerguson.jinja2-snippet-kit)
