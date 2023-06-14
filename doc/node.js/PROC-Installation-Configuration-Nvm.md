@@ -1,26 +1,34 @@
-# Installation / Configuration NVM (Node Version Manager)
+<h1>Installation / Configuration NVM (Node Version Manager)</h1>
+
+
+
+
+**Index**
+- [Description](#description)
+- [Requirements](#requirements)
+- [Execution](#execution)
+  - [Install NVM](#install-nvm)
+  - [Set Node.js Version](#set-nodejs-version)
+  - [Set Node.js Version .nvmrc File](#set-nodejs-version-nvmrc-file)
+- [Authors](#authors)
+
+
+
+
+
+## Description
 
 Tool that allows you to install and configure the version of nodejs to work with (helps work / manage different versions and therefore manage different work environments)
 
 [Node.js](https://nodejs.org)
 
-Step to follow:
-
-- [Check Prerequisites](#check-prerequisites)
-- [Install NVM](#installnvm)
-- [Set Node.js Version](#setnodeversion)
-- [Set Node.js Version .nvmrc File](#setnodeversionnvmfile)
 
 
-- https://nodejs.org/en/download/package-manager/
-- https://www.sitepoint.com/quick-tip-multiple-versions-node-nvm/
-- https://github.com/creationix/nvm
-- https://github.com/coreybutler/nvm-windows
 
 
-## <a name="check-prerequisites">Check Prerequisites</a>
+## Requirements
 
-* Check installed version 
+* Check installed version
 
 ```bash
 nvm version
@@ -29,10 +37,11 @@ nvm version
 
 
 
+## Execution
 
-## <a name="installnvm">Install NVM</a>
+### Install NVM
 
-Steps: 
+Steps to follow:
 
 * Installing a version of nodejs from nvm
 * Set the version of node to work with
@@ -59,18 +68,18 @@ Note : this way we make sure to have this version installed
 
 
 
-## <a name="#setnodeversion">Set Node.js Version</a>
+### Set Node.js Version
 
 If you have more than one version, you can choose which one to work with. In order to do this, all the identified installed versions will be shown and later it will be indicated which one to use.
 
-1. Execute the following command 
+1. Execute the following command
 
 ```bash
 nvm list
 
     11.3.0
   * 10.14.1
-    8.10.0 
+    8.10.0
 
 nvm use 8.10.0
 ...
@@ -78,7 +87,7 @@ nvm list
 
     11.3.0
     10.14.1
-  * 8.10.0 
+  * 8.10.0
 
 ```
 
@@ -86,7 +95,7 @@ nvm list
 
 
 
-## <a name="#setnodeversionnvmfile">Set Node.js Version .nvmrc File</a>
+### Set Node.js Version .nvmrc File
 
 The configuration can be used from a configuration file : .nvmrc
 
@@ -95,3 +104,11 @@ Execute the following command in a directory next to that file
 ```bash
 nvm use
 ```
+
+
+
+
+
+## Authors
+
+* **Víctor Madrid**
