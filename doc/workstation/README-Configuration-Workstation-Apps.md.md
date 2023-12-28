@@ -12,14 +12,186 @@ Step to follow:
 * Verify that the Java is installed
 
 
+
+
+
 ## List of Apps
 
+### Core
+
+- [Brew](https://brew.sh/) - MacOs Package Management
+
+
+```bash
+# Brew install apps
+brew install --cask firefox
+brew install --cask skype
+brew install --cask google-chrome
+
+brew install coreutils
+brew install curl
+brew install git
+```
+
+
+### Terminal
+
 - [iTerm](https://iterm2.com/) - Mac Terminal Emulator
+
+```bash
+# Brew install
+brew install --cask iterm2
+```
+
 - [Zsh](http://www.zsh.org/) - Z Shell
 - [Oh my Zsh](https://ohmyz.sh/) - Terminal Helper
     * [powerlevel9k](https://github.com/Powerlevel9k/powerlevel9k) - Theme for Zsh
     * [fzf](https://github.com/junegunn/fzf) - Command-line fuzzy finder
-- [Brew](https://brew.sh/) - Mac Package Management
+
+```bash
+# Brew install
+brew install --cask iterm2
+brew install fzf
+```
+
+
+
+
+
+### IDE
+
+- [Sublime](https://www.sublimetext.com/) - Text Editor
+
+```bash
+# Brew install
+brew install --cask iterm2
+```
+
+- [Visual Studio Code](https://code.visualstudio.com/) - Visual Studio Code Editor
+
+
+**Personal**
+
+```bash
+# Importante
+# * Decidir si se instala la ultima versión o bien se establece una concreta con @version
+
+# **********************************
+# Extensiones de VSC Personales
+
+# Dracula Theme: Intefaz para reducir el cansancio de la vista
+code --install-extension dracula-theme.theme-dracula --force
+# Power Mode: Marca todo lo que puedes escribir en plan flipado
+code --install-extension hoovercj.vscode-power-mode --force
+```
+
+
+
+**General**
+
+```bash
+# Importante
+# * Decidir si se instala la ultima versión o bien se establece una concreta con @version
+
+# **********************************
+# Extensiones de VSC Generales : Mejorar la codificación
+
+# Indent Rainbow: Facilita que la indentación sea más legible
+code --install-extension oderwat.indent-rainbow --force
+# Better Comments: Facilita hacer más legible los comentarios
+code --install-extension aaron-bond.better-comments --force
+# Prettier: Formateador de código que establece un estilo de código coherente
+code --install-extension esbenp.prettier-vscode --force
+# Prettigy JSON: Facilita hacer más legible los formatos JSON
+code --install-extension mohsen1.prettify-json --force
+# Trailing Spaces: Facilita la detección y eliminación de espacios extra en los textos / código
+code --install-extension shardulm94.trailing-spaces --force
+# Partial Diff: Facilita comparar dos secciones de texto / código
+code --install-extension ryu1kn.partial-diff --force
+# Rainbow Brackets: Facilita comparar dos secciones de texto / código
+code --install-extension 2gua.rainbow-brackets --force
+# XML Tools: Facilita el trabajar con formato XML, XQuery y XPath
+code --install-extension DotJoshJohnson.xml --force
+# YAML: Facilita el soporte a YAML
+code --install-extension redhat.vscode-yaml --force
+# Better Jinja: Soporte para Jinja2
+code --install-extension samuelcolvin.jinjahtml --force
+
+
+# **********************************
+# Extensiones de VSC Generales : Markdown
+
+# Markdown All in One: Facilita una serie de herramientas para trabajar con Markdowns
+code --install-extension yzhang.markdown-all-in-one --force
+# Markdownlint: Lintador y checkeador de estilo para Makdown
+code --install-extension DavidAnson.vscode-markdownlint --force
+# Markdown Preview Enhanced: Previsualizador de Markdown
+code --install-extension shd101wyy.markdown-preview-enhanced --force
+# Markdown PDF: Facilita la exportacion de Markdown a PDF, HTML, PNG, ...
+code --install-extension yzane.markdown-pdf --force
+
+# **********************************
+# Extensiones de VSC Generales : Git
+
+# Git Lens: Integra funcionalidades de Git sobre el Editor
+code --install-extension eamodio.gitlens --force
+
+# **********************************
+# Extensiones de VSC Generales : Extra
+
+# Open in Browser: Facilita abrir alguno de los elmentos desde un navegador
+code --install-extension techer.open-in-browser --force
+# Remote SSH: Facilita trabajar con servidores remotos o máquinas virtuales
+code --install-extension ms-vscode-remote.remote-ssh --force
+# Remote SSH Editing Files: Facilita trabajar con servidores remotos o máquinas virtuales desde un fichero de configuracion
+code --install-extension ms-vscode-remote.remote-ssh-edit --force
+# Material Icon Theme: Facilita un catalogo de iconos paras los diferentes ficheros
+code --install-extension PKief.material-icon-theme --force
+# REST Client: Proporciona un cliente para realizar peticiones HTTP desde VSC
+code --install-extension humao.rest-client --force
+# Draw.io Integration: Facilita la integración con Draw.io
+code --install-extension hediet.vscode-drawio --force
+# Live Share: Facilita la colaboración en tiempo real con otros desarrolladores
+code --install-extension MS-vsliveshare.vsliveshare --force
+# Code Snap: Facilita el realizar capturas de pantalla sobre el código
+code --install-extension adpyke.codesnap --force
+# Regex Previewer: Facilita el progra expresiones regulares
+code --install-extension chrmarti.regex --force
+```
+
+
+
+
+    * [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
+    * [Docker](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker)
+    * [Intellicode](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode)
+    * [Remote - Container](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
+    * [settings-sync](https://marketplace.visualstudio.com/itemdetails?itemName=Shan.code-settings-sync)
+
+
+
+
+
+### Development tools
+
+```bash
+# Brew install
+brew install asdf
+```
+
+Configuration
+
+### Other tools
+
+```bash
+# Brew install
+
+```
+
+
+
+
+
 - [Docker](https://www.docker.com/) - Container
 - [Dash](https://kapeli.com/dash) - API documentation Browser and Code Snippet Manager
 - [SdkMan](https://sdkman.io/) - Sofware Development Kit Manager (Java JDK,....)
@@ -31,44 +203,7 @@ Step to follow:
 - [vagrant](https://www.vagrantup.com/) - Development Environment Tool
 - [Wine](https://www.winehq.org/) - Run Windows Application
 
-- [Visual Studio Code](https://code.visualstudio.com) - IDE
 
-    * [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
-    * [Better Comments](https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments)
-    * [Compare Folders](https://marketplace.visualstudio.com/items?itemName=moshfeu.compare-folders)
-    * [Docker](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker)
-    * [Dracula Official Theme](https://marketplace.visualstudio.com/items?itemName=dracula-theme.theme-dracula)
-    * [GitLenss - Git Supercharger](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens) - Git into VSC
-    * [ident-rainbow](https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow) - Marked identation
-    * [Intellicode](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode)
-    * [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
-    * [Noctis](https://marketplace.visualstudio.com/items?itemName=liviuschera.noctis) - Ligth & Dark Themes
-    * [open-in-browser](https://marketplace.visualstudio.com/items?itemName=coderfee.open-html-in-browser)
-    * [Polacode](https://marketplace.visualstudio.com/items?itemName=pnp.polacode)
-    * [Powermode](https://marketplace.visualstudio.com/items?itemName=hoovercj.vscode-power-mode)
-    * [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
-    * [Prettier JSON](https://marketplace.visualstudio.com/items?itemName=mohsen1.prettify-json)
-    * [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
-    * [rainbow - brackets](https://marketplace.visualstudio.com/items?itemName=2gua.rainbow-brackets)
-    * [Remote - Container](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
-    * [Remote - SSH](https://code.visualstudio.com/docs/remote/ssh)
-    * [Remote - SSH Editing Files](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh-edit)
-    * [Swagger Viewer](https://marketplace.visualstudio.com/items?itemName=Arjun.swagger-viewer)
-    * [SynthWave 84](https://marketplace.visualstudio.com/items?itemName=RobbOwen.synthwave-vscode)
-    * [Trailing Spaces](https://marketplace.visualstudio.com/items?itemName=shardulm94.trailing-spaces)
-    * [xxx](yyy)
-    * [XML Tools](https://marketplace.visualstudio.com/items?itemName=DotJoshJohnson.xml) - XML Formatting, XQuery and XPath Query Tool
-    * [YAML](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml) - YAML Support
-
-    * 
-    * [xxx](yyy)
-    * [bracket-pair-colorizer-2](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer-2)
-    * [settings-sync](https://marketplace.visualstudio.com/itemdetails?itemName=Shan.code-settings-sync)
-    * [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)
-
-    * [Python Linting](https://code.visualstudio.com/docs/python/linting)
-    * [Jinja2](https://marketplace.visualstudio.com/items?itemName=samuelcolvin.jinjahtml)
-    * [Jinja2 Snippet kit](https://marketplace.visualstudio.com/items?itemName=WyattFerguson.jinja2-snippet-kit)
 
 
 
