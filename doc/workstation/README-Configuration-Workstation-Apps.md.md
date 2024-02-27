@@ -9,18 +9,34 @@ Step to follow:
 
 ## Check Prerequisites
 
-* Verify that the Java is installed
-
+* N/A
 
 
 
 
 ## List of Apps
 
-### Core
+
+
+### Brew
 
 - [Brew](https://brew.sh/) - MacOs Package Management
 
+Installation
+
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+
+
+
+
+### Core
+
+* List of applications installed with Brew
+
+Installation
 
 ```bash
 # Brew install apps
@@ -31,26 +47,38 @@ brew install --cask google-chrome
 brew install coreutils
 brew install curl
 brew install git
+brew install gpg
 ```
+
+
+
 
 
 ### Terminal
 
 - [iTerm](https://iterm2.com/) - Mac Terminal Emulator
 
+Installation
+
 ```bash
 # Brew install
 brew install --cask iterm2
 ```
+
+
+
+
+### Z Shell
 
 - [Zsh](http://www.zsh.org/) - Z Shell
 - [Oh my Zsh](https://ohmyz.sh/) - Terminal Helper
     * [powerlevel9k](https://github.com/Powerlevel9k/powerlevel9k) - Theme for Zsh
     * [fzf](https://github.com/junegunn/fzf) - Command-line fuzzy finder
 
+Installation
+
 ```bash
 # Brew install
-brew install --cask iterm2
 brew install fzf
 ```
 
@@ -58,17 +86,78 @@ brew install fzf
 
 
 
-### IDE
+### asdf-vm
+
+- [Asdf-Vm](https://asdf-vm.com) - Gestor de versiones de plataforams
+
+Installation
+
+```bash
+brew install asdf
+```
+
+Configuración para Zsh
+
+```bash
+echo -e "\n. $(brew --prefix asdf)/libexec/asdf.sh" >> ${ZDOTDIR:-~}/.zshrc
+```
+
+Installation of plugins
+
+```bash
+asdf plugin-add nodejs
+asdf plugin-add java
+asdf plugin-add python
+```
+
+Verify
+
+```bash
+# Number
+asdf list all nodejs | wc -l
+
+asdf list all nodejs
+
+asdf install nodejs 16.20.2
+
+asdf global nodejs 16.20.2
+```
+
+Updating plugins
+
+```bash
+asdf plugin update --all
+```
+
+```bash
+asdf update       # via git
+brew upgrade asdf # via homebrew
+```
+
+
+
+
+
+### IDE
 
 - [Sublime](https://www.sublimetext.com/) - Text Editor
 
+Installation
+
 ```bash
 # Brew install
-brew install --cask iterm2
+brew install --cask sublime-text
 ```
 
 - [Visual Studio Code](https://code.visualstudio.com/) - Visual Studio Code Editor
 
+
+Installation
+
+```bash
+# Brew install
+brew install --cask visual-studio-code
+```
 
 **Personal**
 
@@ -172,7 +261,7 @@ code --install-extension chrmarti.regex --force
 
 
 
-### Development tools
+### Development tools
 
 ```bash
 # Brew install
@@ -181,11 +270,14 @@ brew install asdf
 
 Configuration
 
-### Other tools
+
+
+
+
+### Other tools
 
 ```bash
 # Brew install
-
 ```
 
 
