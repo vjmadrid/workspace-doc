@@ -13,8 +13,14 @@ Step to follow:
 
  * Raspbian required
 
-https://medium.com/geekculture/getting-started-with-raspberry-pi-and-installing-raspberry-pi-os-f20cbee4c008 
+https://medium.com/geekculture/getting-started-with-raspberry-pi-and-installing-raspberry-pi-os-f20cbee4c008
 
+Se requieren 3 programas
+
+* Raspberry PI Manager https://raspberrypi.com/software/
+* Cliente FTP (Por ejemplo: Filezilla)
+* Visor VNC (): Conexion escritorio remoto para interfaz web
+  * https://www.realvnc.com/es/connect/download/viewer/
 
 
 
@@ -26,6 +32,34 @@ Execute the following command via console
 ```bash
 xxx
 ```
+
+Configure hostname: **raspberrypi.local**
+
+
+## Access 
+
+Execute the following command via console
+
+
+```bash
+ping raspberrypi.local
+```
+
+Connect ssh
+
+ssh piadmin@ip
+ssh piadmin@
+
+
+sudo raspi-config
+
+Configurar una ip fija
+
+sudo nmtui
+
+
+
+
 
 
 
@@ -127,7 +161,7 @@ sudo apt install make libssl-dev libghc-zlib-dev libcurl4-gnutls-dev libexpat1-d
 
 
 
-### Connect SSH 
+### Connect SSH
 
 Execute the following command via console
 
